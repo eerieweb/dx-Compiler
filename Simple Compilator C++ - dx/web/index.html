@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Compiler by dx</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="https://eerie.pro" target="_blank">About</a></li>
+            <li><a href="mailto:svetlana@eerie.pro">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Simple Compiler</h1>
+        <p>Developed by <a href="https://github.com/eerieweb" target="_blank">dx</a></p>
+        <div class="toggle-container">
+            <label class="switch">
+                <input type="checkbox" id="theme-toggle" onclick="toggleTheme()">
+                <span class="slider"></span>
+            </label>
+            <span>Toggle Night/Day Mode</span>
+        </div>
+    </header>
+    <main>
+        <section id="compiler">
+            <textarea id="sourceCode" rows="10" cols="50" placeholder="Enter your source code here..."></textarea>
+            <br>
+            <button onclick="compileCode()"><i class="fas fa-play"></i> Compile</button>
+            <h2>Output:</h2>
+            <pre id="output"></pre>
+            <h2>Logs:</h2>
+            <pre id="logs"></pre>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 dx. All rights reserved.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
